@@ -1,0 +1,55 @@
+files/
+#gradle.properties
+
+tags
+*.log
+# Package Files #
+*.war
+*.ear
+*.swp
+*.offset
+*.tags
+
+# OSX Files #
+.DS_Store
+
+# Binaries #
+jars/
+build/
+out/
+*.class
+*.node
+
+# Gradle Files #
+.gradle
+
+# Eclipse Files #
+.project
+.classpath
+.cache
+.settings
+
+# IntelliJ Files #
+.idea
+.idea_module
+*.iml
+*.ipr
+*.iws
+
+# shared data files #
+share/
+
+#vim
+.syntastic*
+
+#R
+*.Rhistory
+*.Rprofile
+*.RData
+*.Rproj.user
+
+#general
+*.pdf
+
+.Rproj.user
+

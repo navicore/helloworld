@@ -1,0 +1,30 @@
+#!/bin/sh
+
+SCRIPT_DIR="$(cd `dirname $0`; pwd)"
+PROJECT_DIR="$(cd $SCRIPT_DIR/..; pwd)"
+PROJECT_JAR=""
+
+for entry in "$PROJECT_DIR/build/libs"/*
+do
+  PROJECT_JAR+=:$entry
+done
+
+CLASSPATH=$PROJECT_JAR
+for jar in `find $PROJECT_DIR/build/dist -name '*jar'`; do
+  if [[ $jar != *guava-14* && $jar != *hadoop* ]];
+  then
+    CLASSPATH+=:$jar
+  else
+    CLASSPATH=$jar:$CLASSPATH
+  fi
+done
+
+JAVA_OPTS="-Xmx12g -Xms4g"
+JAVA_OPTS+=" -Dcom.sun.management.jmxremote"
+JAVA_OPTS+=" -Dcom.sun.management.jmxremote.port=9011"
+JAVA_OPTS+=" -Dcom.sun.management.jmxremote.local.only=false"
+JAVA_OPTS+=" -Dcom.sun.management.jmxremote.authenticate=false"
+JAVA_OPTS+=" -Dcom.sun.management.jmxremote.ssl=false"
+
+java -classpath $CLASSPATH $JAVA_OPTS com.onextent.helloworld.Main $@
+
