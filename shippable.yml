@@ -1,0 +1,4 @@
+build_image: shippableimages/ubuntu1404_java
+jdk:
+   - openjdk7
+

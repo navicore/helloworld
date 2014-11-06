@@ -209,7 +209,7 @@ task testJar(dependsOn: testClasses, type: Jar) {
 build.dependsOn.add(testJar)
 
 build.dependsOn.add(copyDeps)
-check.dependsOn.remove(test)
+//check.dependsOn.remove(test)
 test.ignoreFailures = true
 test.fork = true
 
