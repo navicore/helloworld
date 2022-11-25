@@ -45,7 +45,7 @@ configurations.all {
 dependencies {
   compile "org.scala-lang:scala-library:${scalaVersion}"
   compile "org.slf4j:slf4j-api:${SLF4J_VERSION}"
-  compile 'com.timgroup:java-statsd-client:3.0.2'
+  compile 'com.timgroup:java-statsd-client:3.1.0'
   compile 'log4j:log4j:1.2.17'
   runtime "org.slf4j:slf4j-log4j12:${SLF4J_VERSION}"
   runtime 'com.jcabi:jcabi-log:0.14.3'
