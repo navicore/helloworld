@@ -95,7 +95,7 @@ dependencies {
     exclude group: 'javax.servlet'
   }
   compile 'org.json4s:json4s-native_2.10:3.2.10'
-  compile 'net.sf.opencsv:opencsv:2.0'
+  compile 'net.sf.opencsv:opencsv:2.4'
   compile 'org.scala-lang.modules:scala-async_2.10:0.9.5'
   
   testCompile ('org.scalatra:scalatra-scalatest_2.10:2.3.0') {
