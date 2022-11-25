@@ -22,7 +22,7 @@ buildscript {
   }
   dependencies {
     classpath 'com.netflix.nebula:gradle-ospackage-plugin:1.12.8'
-    classpath 'com.github.maiflai:gradle-scalatest:0.4'
+    classpath 'com.github.maiflai:gradle-scalatest:0.32'
   }
 }
 
