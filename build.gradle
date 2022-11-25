@@ -68,7 +68,7 @@ dependencies {
   compile 'com.netflix.rxjava:rxjava-scala:0.20.7'
   compile 'net.databinder.dispatch:dispatch-core_2.10:0.11.4'
 
-  compile ('org.apache.hadoop:hadoop-client:2.2.0') {
+  compile ('org.apache.hadoop:hadoop-client:3.3.4') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
     //exclude group: 'com.google.protobuf'
