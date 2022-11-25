@@ -61,7 +61,7 @@ dependencies {
     exclude group: 'com.google.protobuf'
   }
 
-  compile 'com.rabbitmq:amqp-client:3.6.6'
+  compile 'com.rabbitmq:amqp-client:5.16.0'
 
   compile 'org.rogach:scallop_2.10:0.9.6'
 
