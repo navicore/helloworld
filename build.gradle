@@ -50,7 +50,7 @@ dependencies {
   runtime "org.slf4j:slf4j-log4j12:${SLF4J_VERSION}"
   runtime 'com.jcabi:jcabi-log:0.22.0'
 
-  compile ('org.apache.spark:spark-core_2.10:1.1.0') {
+  compile ('org.apache.spark:spark-core_2.10:1.6.3') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'org.apache.hadoop'
     exclude group: 'com.google.protobuf'
