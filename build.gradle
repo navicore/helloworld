@@ -70,7 +70,7 @@ dependencies {
     //exclude group: 'com.google.protobuf'
   }
   compile 'org.eclipse.jetty.aggregate:jetty-all-server:8.1.14.v20131031'
-  compile ('org.scalatra:scalatra-json_2.10:2.3.0') {
+  compile ('org.scalatra:scalatra-json_2.10:2.4.1') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
   }
