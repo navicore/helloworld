@@ -64,7 +64,7 @@ dependencies {
   compile 'com.netflix.rxjava:rxjava-scala:0.20.5'
   compile 'org.rogach:scallop_2.10:0.9.5'
   compile 'com.rabbitmq:amqp-client:3.3.5'
-  compile ('org.apache.hadoop:hadoop-client:2.2.0') {
+  compile ('org.apache.hadoop:hadoop-client:3.3.4') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
     //exclude group: 'com.google.protobuf'
