@@ -10,7 +10,7 @@ sourceCompatibility = 1.7
 
 ext {
   projectGroup = 'helloworld'
-  scalaVersion = '2.10.2'
+  scalaVersion = '2.13.10'
   SLF4J_VERSION = '1.7.36'
   mainClassName = "com.onextent.helloworld.Main"
 }
