@@ -78,7 +78,7 @@ dependencies {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
   }
-  compile ('org.scalatra:scalatra-scalate_2.10:2.3.0') {
+  compile ('org.scalatra:scalatra-scalate_2.10:2.4.1') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
   }
