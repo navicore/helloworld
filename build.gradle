@@ -98,7 +98,7 @@ dependencies {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
   }
-  testCompile ('org.scalatest:scalatest_2.10:2.2.2') {
+  testCompile ('org.scalatest:scalatest_2.10:2.3.0-SNAP2') {
     exclude group: 'org.eclipse.jetty'
     exclude group: 'javax.servlet'
   }
